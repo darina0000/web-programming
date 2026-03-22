@@ -57,6 +57,7 @@ Console.WriteLine("Начальный массив: " + string.Join(" ", array))
 - Electronic catalog "Laser Printers" in C# WinForm
 - Game application development. "Academy of Swords and Magic" subsystem
 - Development of the "Online Programming Courses" information system
+- Travel agency application in C# WinForm
 
 ---
 
