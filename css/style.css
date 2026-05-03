@@ -580,3 +580,155 @@ body {
     width: 1212px;           
     max-width: 1212px;
 }
+/* Admin Section */
+
+.admin-section {
+    margin-top: -120px;     
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+.admin-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.admin-section__box {
+    background: #F1F1F1;
+    border-radius: 20px;
+    width: 1273px;
+    max-width: 1273px;
+    height: 720px;
+    margin: 0 0 0 -30x;      
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin-section__content {    
+    width: 500px;
+}
+.admin-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;            
+    font-weight: 400;          
+    line-height: 58px;         
+    color: #000000;             
+    margin: 0 0 0 45px; 
+    width: 426px;              
+}
+.admin-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;            
+    font-weight: 400;           
+    line-height: 30px;          
+    color: rgba(0, 0, 0, 0.5);  
+    margin: 63px 0 0 45px;        
+    width: 474px;               
+}
+.admin-section__image-wrapper {
+    position: absolute;
+    right: 0;                  
+    top: 78px;                
+}
+.admin-section__image {
+    width: 500px;               
+    height: 604px;            
+    object-fit: cover;
+    display: block;
+}
+
+/* Branding Section */
+.branding-section {
+    margin-top: -101px;       
+    padding: 80px 0;
+    background: #FFFFFF;
+}
+.branding-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.branding-section__header {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: flex-start;
+    gap: 140px;                   
+    margin-bottom: 80px;
+}
+.branding-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;        
+    color: #000000;
+    margin: 0;
+    width: 599px;             
+}
+.branding-section__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;           
+    font-weight: 400;
+    line-height: 30px;         
+    color: rgba(0, 0, 0, 0.5); 
+    margin: 26px 0 0 0; 
+    width: 506px;              
+}
+.branding-section__phones-wrapper {
+    background: #F1F1F1;
+    border-radius: 20px;
+    width: 1273px;
+    max-width: 1273px;
+    height: 700px;
+    margin: 0 auto 0 -1px;    
+    padding: 10px 0 0 10px;
+    position: relative;
+}
+.branding-section__phones {
+    display: flex;
+    justify-content: center;
+    gap: 47px;                
+    margin-top: -48px;
+}
+.branding-section__phone {
+    flex-shrink: 0;
+}
+.branding-section__phone--left {
+    margin-top: 112px;         
+}
+.branding-section__phone--center {
+    margin-top: 0;            
+}
+.branding-section__phone--right {
+    margin-top: 112px;         
+}
+.branding-section__phone-img {
+    width: 350px;              
+    height: 678px;             
+    object-fit: cover;
+    display: block;
+}
+.branding-section__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 179px;              
+    margin-top: 80px;
+}
+.branding-section__footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;        
+    color: #000000;
+    margin: 0;
+    width: 561px;             
+}
+.branding-section__footer-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 13px 0 0 0;       
+    width: 501px;
+}
