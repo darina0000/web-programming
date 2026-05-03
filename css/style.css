@@ -184,3 +184,30 @@ body {
     max-width: 550px;
     padding-right: 6px;
 }
+
+/* QR Section */
+.qr-section {
+    padding: 1px 0;
+    background: #FFFFFF;
+}
+.qr-section__container {
+    max-width: 1273px;      
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.qr-section__box {
+    background: #A9FF2C;
+    border-radius: 20px;
+    padding: 11px 30px 35px 30px;  
+    margin-left: -29px;
+    min-height: 260px;              
+}
+.qr-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;        
+    font-weight: 400;       
+    line-height: 51px;     
+    color: #000000;        
+    margin: 0;
+    width: 100%;
+}
