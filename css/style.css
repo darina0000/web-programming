@@ -416,3 +416,167 @@ body {
     max-width: 806px;
     text-align: left;       
 }
+
+/* Promo Section */
+.promo-section {
+    margin-top: -43px;
+    background: #FFFFFF;
+}
+.promo-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.promo-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+.promo-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;      
+    color: #000000;
+    margin: 0 0 0 -15px;
+    width: 383px;            
+}
+.promo-section__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 45px 0 0 0;        
+    width: 387px;
+    transform: translateX(-136px);  
+}
+/* Cards */
+.promo-section__cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+}
+.promo-section__card {
+    width: 622px;
+    flex-shrink: 0;
+    margin-left: -15px;       
+    margin-top: 19px;        
+}
+.promo-section__card-img {
+    width: 622px;
+    height: 497px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.promo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;          
+    font-weight: 400;
+    line-height: 41px;        
+    color: #000000;
+    margin: 18px 0 15px 0;
+}
+.promo-section__card:last-child .promo-section__card-title {
+    font-size: 35px;          
+}
+.promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;        
+    color: rgba(0, 0, 0, 0.5);
+   margin: 38px 0 0 0;
+}
+.promo-section__card:first-child .promo-section__card-text {
+    font-size: 20px;
+    width: 603px;
+    max-width: 603px;
+}
+.promo-section__card:last-child .promo-section__card-text {
+    font-size: 21px;
+    width: 601px;
+    max-width: 601px;
+}
+.promo-section__cards--row2 {
+    margin-top: 47px;
+    margin-left: -14px;     
+    display: flex;             
+    justify-content: flex-start;
+    gap: 30px;  
+}
+.promo-section__cards--row2 .promo-section__card {
+    width: 622px;
+    flex-shrink: 0;
+    margin-left: 0;           
+    margin-top: 19px;
+}
+.promo-section__cards--row2 .promo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 41px;
+    color: #000000;
+    margin: 18px 0 15px 0;
+}
+.promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title {
+    font-size: 35px;        
+    
+}
+.promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+    font-size: 36px;        
+}
+.promo-section__cards--row2 .promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;        
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 38px 0 0 0;
+}
+.promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 559px;
+    max-width: 559px;
+    margin: 38px 0 0 0;
+}
+.promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-text {
+    width: 580px;
+    max-width: 580px;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+    padding: 121px 0;
+    background: #FFFFFF;
+}
+
+.final-cta-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.final-cta-section__box {
+    background: #A9FF2C;
+    border-radius: 20px;
+    padding: 12px 30px 43px 30px;
+    width: 1273px;           
+    max-width: 1273px;        
+    margin-left: 0;         
+}
+
+.final-cta-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;          
+    font-weight: 400;           
+    line-height: 51px;       
+    color: #000000;             
+    margin: 0;
+    width: 1212px;           
+    max-width: 1212px;
+}
