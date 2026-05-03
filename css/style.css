@@ -1146,4 +1146,191 @@ body {
     color: #707378;          
     margin: 0;
 }
+/* Guest Reviews Section */
+.guest-reviews-section {
+    padding: 50px 0 100px 0;
+    background: #FFFFFF;
+}
+.guest-reviews-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.guest-reviews-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;           
+    font-weight: 400;
+    line-height: 58px;     
+    color: #000000;
+    margin: -64px 0 80px 0; 
+    width: 443px;         
+}
+.guest-reviews-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.guest-reviews-section__card {
+    background: #F1F1F1;
+    border-radius: 20px;
+    padding: 30px;
+}
+/* 1. Emilly Barrett - выше и уже */
+.guest-reviews-section__card:nth-child(1) {
+    height: 290px;          
+    width: 404px;             
+    margin-top: -10px;         
+    padding: 20px;
+}
+
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__avatar {
+    margin-top: 10px;       
+    margin-left: 10px;       
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__author-info {
+    margin-top: 5px;       
+    margin-left: 3px;    
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__platform {
+    margin-top: 8px;      
+    margin-left: -3px; 
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__review-text {
+    margin-top: -5px;        
+    margin-left: 10px;        
+    width: 345px;             
+     
+}
+/* 2. Margaret Sims - выше и левее */
+.guest-reviews-section__card:nth-child(2) {
+    width: 404px;
+    height: 350px;
+    padding: 20px;
+    margin-top: -10px;     
+    margin-left: -10px;  
+}
+
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__avatar {
+    margin-top: 9px;    
+    margin-left: 9px;        
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__author-info {
+    margin-top: 5px;  
+    margin-left: 3px;      
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__platform {
+    margin-top: 8px;     
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__review-text {
+    margin-top: -5px;         
+    margin-left: 10px;        
+    width: 330px;        
+}
+/* 3. Thomas Fletcher - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(3) {
+    width: 404px;          
+    height: 230px;           
+    padding: 30px;
+    margin-top: -10px;        
+    margin-left: -20px;    
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__avatar {
+    margin-top: -1px;
+    margin-left: 2px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 0px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__platform {
+    margin-top: 8px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__review-text {
+    font-size: 18px;      
+    line-height: 30px;
+    margin-top: -5px;
+    margin-left: 1px;
+    width: 327px;       
+}
+/* 4. Christopher Doyle - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(4) {
+    width: 404px;           
+    height: 290px;        
+    padding: 30px;
+    margin-top: -60px;          
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-name {
+    font-size: 20px;          
+     margin-top: -6px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-info {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__platform {
+    margin-top: 8px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__review-text {
+    margin-top: -5px;
+    width: 340px;             
+}
+/* 5. Clare Hamilton - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(5) {
+    width: 404px;           
+    height: 290px;      
+    padding: 30px;
+    margin-left: -10px;     
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 2px;
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__platform {
+    margin-top: 10px;
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__review-text {
+    margin-top: -5px;
+    margin-left: 0px;
+    width: 315px;             
+}
+/* 6. Benedict French - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(6) {
+    width: 404px;             
+    height: 380px;         
+    padding: 30px;
+    margin-top: -120px;         
+    margin-left: -20px;     
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 3px;
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__platform {
+    margin-top: 7px;
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__review-text {
+    margin-top: -2px;
+    margin-left: 0px;
+    width: 338px;           
+}
+.guest-reviews-section__author-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.guest-reviews-section__author-name {
+    font-size: 19px;
+    color: #000000;
+    margin: 0;
+}
+.guest-reviews-section__review-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;          
+    font-weight: 400;
+    line-height: 30px;         
+    letter-spacing: 0.35px;   
+    color: #000000;
+    margin: 0;
+}
 
