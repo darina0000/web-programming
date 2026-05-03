@@ -1047,3 +1047,103 @@ body {
     left: 196px;            
     bottom: -19px;              
 }
+
+/* Testimonials Section */
+.testimonials-section {
+    margin-top: -118px;       
+    padding: 100px 0;        
+    background: #FFFFFF;
+}
+.testimonials-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.testimonials-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.testimonials-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;           
+    font-weight: 400;
+    line-height: 58px;         
+    color: #000000;
+    margin: 0 0 0 -15px; 
+    width: 450px;             
+}
+.testimonials-section__nav {
+    display: flex;
+    gap: 43px;
+    margin-right: 14px;
+}
+.testimonials-section__arrow {
+    width: 70px;               
+    height: 60px;              
+    background: transparent;   
+    border: none;  
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.testimonials-section__arrow svg {
+    width: 48px;              
+    height: 60px;
+}
+.testimonials-section__arrow:hover {
+    background: #F1F1F1;
+}
+.testimonials-section__content {
+    display: flex;
+    gap: 50px;
+}
+.testimonials-section__image {
+    width: 407px;              
+    height: 474px;             
+    border-radius: 20px;       
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-top: -3px;        
+    margin-left: -14px;   
+}
+.testimonials-section__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.testimonials-section__text-block {
+    flex: 1;
+    margin-top: -23px;         
+}
+.testimonials-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;          
+    font-weight: 400;
+    line-height: 51px;       
+    color: #000000;
+    margin: 0 0 50px 0;
+    width: 800px;             
+    max-width: 800px;
+}
+.testimonials-section__author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;           
+    font-weight: 400;
+    line-height: 30px;        
+    color: #000000;
+    margin: -2px 0 1px 0;
+}
+.testimonials-section__position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;           
+    font-weight: 400;
+    line-height: 30px;       
+    color: #707378;          
+    margin: 0;
+}
+
