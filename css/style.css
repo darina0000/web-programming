@@ -732,3 +732,35 @@ body {
     margin: 13px 0 0 0;       
     width: 501px;
 }
+
+/* Logos Section */
+.logos-section {
+    padding: 0 0;           
+    background: #FFFFFF;
+    margin-top: -30px;
+}
+.logos-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 0px;         
+}
+.logos-section__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 172px);
+    grid-template-rows: repeat(2, 102px);
+    gap: 56px 83px;
+    justify-content: center;
+    margin-top: 0;            
+    margin-left: -32px;
+}
+.logos-section__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos-section__logo-img {
+    width: 172px;
+    height: 102px;
+    object-fit: contain;
+    display: block;
+}
