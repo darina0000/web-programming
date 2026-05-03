@@ -764,3 +764,286 @@ body {
     object-fit: contain;
     display: block;
 }
+
+/* Payment Section */
+
+.payment-section {
+    padding: 129px 0 80px 0;  
+    background: #FFFFFF;
+}
+.payment-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.payment-section__box {
+    background: #A9FF2C;        
+    border-radius: 20px;        
+    width: 1273px;              
+    max-width: 1273px;
+    height: 260px;              
+    margin: 0 auto 0 -14px;
+    padding: 12px 30px 44px 30px;  
+}
+.payment-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;           
+    font-weight: 400;          
+    line-height: 51px;         
+    color: #000000;             
+    margin: 0;
+    width: 1077px;              
+    max-width: 1077px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin-top: 0;
+    padding: 0px 0 100px 0;
+    background: #FFFFFF;
+}
+.pricing-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.pricing-section__header {
+    margin-bottom: 80px;
+}
+.pricing-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    margin: 0 0 0 -15px;    
+    width: 522px;
+}
+.pricing-section__toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 92px;
+}
+.pricing-section__toggle {
+    display: flex;
+    gap: 19px;
+    align-items: flex-start;   
+}
+.pricing-section__toggle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+    margin-top: 0px;
+}
+.pricing-section__toggle-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.pricing-section__toggle-btn--active {
+    color: #000000;
+    letter-spacing: 0.4px;        
+    margin-bottom: 23px;          
+}
+
+.pricing-section__toggle-btn:last-child {
+    font-size: 23px;
+}
+.pricing-section__toggle-line {
+    width: 138px;
+    height: 1px;
+    background: #000000;
+    margin-top: 0;                /* ← Убрали */
+    margin-left: -20px;
+}
+.pricing-section__one-time {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    text-align: right;
+    letter-spacing: 0.5px;
+    margin: -29px 0 0 auto;   
+    margin-right: 14px;       
+    width: 444px;
+}
+.pricing-section__cards {
+    display: flex;
+    gap: 30px;
+    margin-top: -34px; 
+}
+.pricing-section__card {
+    width: 440px;
+    height: 866px;
+    border-radius: 20px;
+    padding: 18px 30px 30px 30px;
+    position: relative;
+}
+.pricing-section__card--basic {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    margin-left: -15px;
+}
+.pricing-section__card--pro {
+    background: #F1F1F1;
+    border: 1px solid #F1F1F1;
+}
+.pricing-section__card--pro .pricing-section__card-subtitle {
+    font-size: 19px;          
+    line-height: 30px;         
+    width: 360px;
+    margin: 28px 0 0 0; 
+}
+.pricing-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #000000;
+     margin: 0px 0 20px 0;  
+}
+.pricing-section__card-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #707378;
+    margin: 27px 0 0 0;
+}
+.pricing-section__divider {
+    width: 393px;
+    height: 1px;
+    background: #E2E3E6;
+    margin: 46px 0;
+}
+.pricing-section__features-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    margin: -33px 0 60px 0;
+}
+.pricing-section__card--pro .pricing-section__features {
+    padding-left: 0px;
+    margin-top: -49px;        
+}
+.pricing-section__card--pro .pricing-section__features li:nth-child(2) {
+  font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--pro .pricing-section__features li:nth-child(9) {
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+.pricing-section__features li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #707378;
+    margin: 0 0 7px 0;
+    padding-left: 34px; 
+}
+.pricing-section__card--basic .pricing-section__features {
+     width: 330px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -1px; 
+}
+.pricing-section__card--basic .pricing-section__features li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;        
+    color: #707378;
+    margin: 0 0 7px 0;       
+    padding-left: 34px;
+    width: 330px;         
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(2) {
+    width: 302px;  
+    margin-top: -2px; 
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(3) {
+    margin-top: -1px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(4) {
+    margin-top: -3px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(5) {
+    margin-top: -3px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(7) {
+    margin-top: -2px;
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__price {
+    position: relative;         
+    height: 80px;               
+    margin-top: 217px;          
+}
+.pricing-section__card--pro .pricing-section__price {
+    margin-top: 60px;
+}
+.pricing-section__price-current {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 74px;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.pricing-section__price-old {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FE6645;
+    position: absolute;
+    left: 152px;                
+    bottom: 11px;               
+}
+.pricing-section__price-period {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #707378;
+    position: absolute;
+    left: 152px;               
+    bottom: -18px;         
+}
+.pricing-section__card--pro .pricing-section__price-old {
+    left: 196px;              
+    bottom: 11px;
+}
+.pricing-section__card--pro .pricing-section__price-period {
+    left: 196px;            
+    bottom: -19px;              
+}
