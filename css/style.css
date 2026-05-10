@@ -63,12 +63,12 @@ body {
     width: 100%;
 }
 .hero__container {
-    position: relative;         
     max-width: 1273px;
     margin: 0 auto;
-    padding: 0;
+    display: grid;
 }
 .hero__image-wrapper {
+    grid-area: 1 / 1;
     width: 1273px;
     height: 720px;
     margin: 0 auto;
@@ -81,18 +81,17 @@ body {
     object-fit: cover;
 }
 .hero__content {
-    position: absolute;
-    top: 0;
-    left: 0;
+    grid-area: 1 / 1;
     width: 100%;
     height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
     z-index: 10;
     pointer-events: none;
 }
 .hero__title {
-    position: absolute;
-    top: 0px;
-    left: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 72px;
     font-weight: 400;
@@ -105,9 +104,9 @@ body {
     pointer-events: auto;
 }
 .hero__demo {
-    position: absolute;
-    top: 570px;
-    left: 150px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-left: 135px;
     z-index: 20;
     pointer-events: auto;
 }
@@ -118,7 +117,7 @@ body {
     line-height: 34px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
-    margin: 0 0 10px 0;
+    margin: 0 0 21px 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .hero__demo-text {
@@ -599,13 +598,13 @@ body {
     max-width: 1273px;
     height: 720px;
     margin: 0 0 0 -30x;      
-    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .admin-section__content {    
     width: 500px;
+    align-self: center;
 }
 .admin-section__title {
     font-family: 'Roboto', sans-serif;
@@ -626,9 +625,9 @@ body {
     width: 474px;               
 }
 .admin-section__image-wrapper {
-    position: absolute;
-    right: 0;                  
-    top: 78px;                
+    margin-left: auto;
+    margin-top: 78px;
+    flex-shrink: 0;
 }
 .admin-section__image {
     width: 500px;               
@@ -861,7 +860,7 @@ body {
     width: 138px;
     height: 1px;
     background: #000000;
-    margin-top: 0;                /* ← Убрали */
+    margin-top: 0;               
     margin-left: -20px;
 }
 .pricing-section__one-time {
@@ -1002,7 +1001,14 @@ body {
     line-height: 30px;
 }
 .pricing-section__price {
-    position: relative;         
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+        "current old"
+        "current period";
+    column-gap: 15px;
+    align-items: end;
+    justify-content: start;
     height: 80px;               
     margin-top: 217px;          
 }
@@ -1015,9 +1021,7 @@ body {
     font-weight: 400;
     line-height: 74px;
     color: #000000;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    grid-area: current;
 }
 .pricing-section__price-old {
     font-family: 'Roboto', sans-serif;
@@ -1025,9 +1029,9 @@ body {
     font-weight: 400;
     line-height: 30px;
     color: #FE6645;
-    position: absolute;
-    left: 152px;                
-    bottom: 11px;               
+    grid-area: old;
+    align-self: end;
+    margin-bottom: 0px;
 }
 .pricing-section__price-period {
     font-family: 'Roboto', sans-serif;
@@ -1035,17 +1039,9 @@ body {
     font-weight: 400;
     line-height: 30px;
     color: #707378;
-    position: absolute;
-    left: 152px;               
-    bottom: -18px;         
-}
-.pricing-section__card--pro .pricing-section__price-old {
-    left: 196px;              
-    bottom: 11px;
-}
-.pricing-section__card--pro .pricing-section__price-period {
-    left: 196px;            
-    bottom: -19px;              
+    grid-area: period;
+    align-self: start;
+    margin-top: -3px;
 }
 
 /* Testimonials Section */
