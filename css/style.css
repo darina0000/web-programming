@@ -2686,3 +2686,158 @@ span {
         font-size: 20px;
     }
 }
+
+@media (max-width: 340px) {
+    .container,
+    .header__container,
+    .hero__container,
+    .features__container,
+    .qr-section__container,
+    .demo-section__container,
+    .summary-section__container,
+    .promo-section__container,
+    .final-cta-section__container,
+    .admin-section__container,
+    .branding-section__container,
+    .logos-section__container,
+    .payment-section__container,
+    .pricing-section__container,
+    .testimonials-section__container,
+    .guest-reviews-section__container,
+    .faq-section__container,
+    .cta-section__container,
+    .footer-section__container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero__title,
+    .cta-section__title {
+        font-size: 32px;
+    }
+
+    .features__title,
+    .qr-section__text,
+    .demo-section__title,
+    .summary-section__text,
+    .promo-section__title,
+    .final-cta-section__text,
+    .admin-section__title,
+    .branding-section__title,
+    .branding-section__footer-title,
+    .payment-section__text,
+    .pricing-section__title,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title {
+        font-size: 30px;
+    }
+
+    .features__card,
+    .admin-section__box,
+    .pricing-section__card,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .payment-section__box {
+        height: auto;
+        min-height: 0;
+        padding: 24px 18px;
+    }
+
+    .payment-section__text {
+        font-size: 24px;
+        line-height: 1.22;
+    }
+
+    .promo-section__card-img {
+        height: 240px;
+    }
+
+    .promo-section__card-title,
+    .promo-section__card:last-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+        font-size: 28px;
+        line-height: 1.16;
+    }
+
+    .pricing-section__card {
+        padding: 18px;
+    }
+
+    .pricing-section__card-title {
+        font-size: 32px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 44px;
+    }
+
+    .promo-section__card,
+    .promo-section__card-img,
+    .promo-section__card-title,
+    .promo-section__card-text {
+        max-width: calc(100vw - 24px);
+    }
+
+    .final-cta-section__text {
+        font-size: 22px;
+        line-height: 1.24;
+    }
+
+    .guest-reviews-section__grid {
+        gap: 20px;
+    }
+
+    .guest-reviews-section__card:nth-child(n) {
+        padding: 20px;
+    }
+
+    .guest-reviews-section__author-block {
+        gap: 12px;
+    }
+
+    .guest-reviews-section__author-info {
+        width: auto;
+        max-width: 100%;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .guest-reviews-section__platform {
+        width: auto;
+        max-width: 140px;
+    }
+
+    .guest-reviews-section__avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    .guest-reviews-section__platform {
+        max-width: 130px;
+    }
+
+    .logo,
+    .btn--header,
+    .cta-section__button,
+    .hero__title,
+    .hero__demo,
+    .qr-section__text,
+    .final-cta-section__text,
+    .payment-section__text,
+    .summary-section__text,
+    .testimonials-section__text {
+        max-width: 100%;
+    }
+}
