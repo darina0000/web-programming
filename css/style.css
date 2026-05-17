@@ -1,0 +1,2843 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    overflow-x: hidden;
+}
+/* Header */
+.header {
+    background: #FFFFFF;
+    height:80px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.header__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+.logo {
+    width: 200px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: -15px;
+}
+.btn--header {
+    background: #000000;
+    color: #FFFFFF;
+    width: 204px;
+    height: 39px;
+    margin-top: -21px;
+    border: none;
+    margin-right: 30px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+.btn--header:hover {
+    background: #333333;
+    transform: translateY(-2px);
+}
+/* Hero Section */
+.hero {
+    margin-top: 30px;
+    padding: 0;
+    background: #fff;
+    width: 100%;
+}
+.hero__container {
+    max-width: 1273px;
+    margin: 0 auto;
+    display: grid;
+}
+.hero__image-wrapper {
+    grid-area: 1 / 1;
+    width: 1273px;
+    height: 720px;
+    margin: 0 auto;
+    margin-left: -15px; 
+}
+.hero__image {
+    width: 1273px;
+    height: 720px;
+    display: block;
+    object-fit: cover;
+}
+.hero__content {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    z-index: 10;
+    pointer-events: none;
+}
+.hero__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    width: 628px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+}
+.hero__demo {
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-left: 135px;
+    z-index: 20;
+    pointer-events: auto;
+}
+.hero__demo-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin: 0 0 21px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero__demo-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: -5px 0 0 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+.features__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;        
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px;            
+}
+.features__card {
+    width: 622px;
+    min-height: 560px;
+    border: 1px solid #E2E3E6;
+    border-radius: 20px;
+    padding: 57px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+.features__icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.features__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    margin: 0 0 46px 0;
+    width: 100%;
+    padding-right: 5px;
+}
+.features__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    width: 100%;
+    max-width: 550px;
+    padding-right: 6px;
+}
+
+/* QR Section */
+.qr-section {
+    padding: 1px 0;
+    background: #FFFFFF;
+}
+.qr-section__container {
+    max-width: 1273px;      
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.qr-section__box {
+    background: #A9FF2C;
+    border-radius: 20px;
+    padding: 11px 30px 35px 30px;  
+    margin-left: -29px;
+    min-height: 260px;              
+}
+.qr-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;        
+    font-weight: 400;       
+    line-height: 51px;     
+    color: #000000;        
+    margin: 0;
+    width: 100%;
+}
+
+/* Demo Section */
+.demo-section {
+    padding: 78px 0;
+    background: #FFFFFF;
+}
+.demo-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.demo-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+.demo-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;       
+    color: #000000;
+    margin: 0;
+    width: 558px;             
+}
+.demo-section__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;          
+    font-weight: 400;
+    line-height: 30px;         
+    color: rgba(0, 0, 0, 0.5); 
+    margin: 0;
+    width: 490px;    
+    margin-top: 15px;      
+    margin-right: 74px; 
+}
+/* Cards */
+.demo-section__cards {
+    display: flex;
+    justify-content: flex-start;  
+    gap: 30px;                    
+}
+.demo-section__card {
+    width: 622px;
+    height: 465px; 
+    background: #F1F1F1;
+    border-radius: 20px;
+    padding-bottom: 60px;
+    flex-shrink: 0;
+}
+.demo-section__phone-img {
+    width: 274px;             
+    height: 465px;              
+    object-fit: cover;
+}
+.demo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;           
+    font-weight: 400;
+    line-height: 34px;         
+    color: #000000;
+    margin: 22px 0 10px 0;
+    text-align: center;
+}
+.demo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;           
+    font-weight: 400;
+    line-height: 30px;         
+    color: #000000;
+    margin: 5px 0 0 0; 
+    text-align: center;
+    padding: 0 30px;
+}
+.demo-section__row {
+    width: 100%;
+    display: block;
+}
+.demo-section__row--second {
+    margin-top: 63px;     
+}
+.demo-section__card-wrapper {
+    width: 622px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+.demo-section__phone {
+    width: 622px;
+    height: 465px;          
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.demo-section__row:first-of-type .demo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;        
+    font-weight: 400;
+    line-height: 34px;
+    color: #000000;
+    margin: 22px 0 10px 0;
+    text-align: center;
+}
+.demo-section__row:first-of-type .demo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;       
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    margin: 15px 0 0 0;
+    text-align: center;
+    padding: 0 30px;
+}
+.demo-section__row--second .demo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;        
+    font-weight: 400;
+    line-height: 34px;
+    color: #000000;
+    margin: 25px 0 10px 0;
+    text-align: center;
+}
+.demo-section__row--second .demo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+.demo-section__row--second .demo-section__card-text--left {
+    width: 600px;           
+    padding: 0;             
+    max-width: 600px;      
+}
+
+.demo-section__row--second .demo-section__card-text--right {
+    width: 531px;          
+    padding: 0;             
+    max-width: 550px;      
+}
+.demo-section__row--third {
+    margin-top: 64px;      
+}
+.demo-section__row--third .demo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 34px;
+    color: #000000;
+    margin: 22px 0 10px 0;
+    text-align: center;
+}
+.demo-section__row--third .demo-section__card-wrapper:first-child .demo-section__card-title {
+    font-size: 26px;       
+}
+.demo-section__row--third .demo-section__card-wrapper:last-child .demo-section__card-title {
+    font-size: 27px;      
+}
+.demo-section__row--third .demo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+.demo-section__row--third .demo-section__card-text--tv {
+    font-size: 20px;        
+    width: 543px;           
+    max-width: 543px;
+    padding: 0;
+}
+
+.demo-section__row--third .demo-section__card-text--grms {
+    font-size: 21px;        
+    width: 247px;         
+    max-width: 247px;
+    padding: 0;
+}
+
+/* Summary Section */
+.summary-section {
+    padding: 240px 0;         
+    background: #FFFFFF;
+}
+.summary-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.summary-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    margin: 0 0 0 256px;
+    width: 806px;
+    max-width: 806px;
+    text-align: left;       
+}
+
+/* Promo Section */
+.promo-section {
+    margin-top: -43px;
+    background: #FFFFFF;
+}
+.promo-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.promo-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+.promo-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;      
+    color: #000000;
+    margin: 0 0 0 -15px;
+    width: 383px;            
+}
+.promo-section__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 45px 0 0 0;        
+    width: 387px;
+    transform: translateX(-136px);  
+}
+/* Cards */
+.promo-section__cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+}
+.promo-section__card {
+    width: 622px;
+    flex-shrink: 0;
+    margin-left: -15px;       
+    margin-top: 19px;        
+}
+.promo-section__card-img {
+    width: 622px;
+    height: 497px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.promo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;          
+    font-weight: 400;
+    line-height: 41px;        
+    color: #000000;
+    margin: 18px 0 15px 0;
+}
+.promo-section__card:last-child .promo-section__card-title {
+    font-size: 35px;          
+}
+.promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;        
+    color: rgba(0, 0, 0, 0.5);
+   margin: 38px 0 0 0;
+}
+.promo-section__card:first-child .promo-section__card-text {
+    font-size: 20px;
+    width: 603px;
+    max-width: 603px;
+}
+.promo-section__card:last-child .promo-section__card-text {
+    font-size: 21px;
+    width: 601px;
+    max-width: 601px;
+}
+.promo-section__cards--row2 {
+    margin-top: 47px;
+    margin-left: -14px;     
+    display: flex;             
+    justify-content: flex-start;
+    gap: 30px;  
+}
+.promo-section__cards--row2 .promo-section__card {
+    width: 622px;
+    flex-shrink: 0;
+    margin-left: 0;           
+    margin-top: 19px;
+}
+.promo-section__cards--row2 .promo-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 41px;
+    color: #000000;
+    margin: 18px 0 15px 0;
+}
+.promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title {
+    font-size: 35px;        
+    
+}
+.promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+    font-size: 36px;        
+}
+.promo-section__cards--row2 .promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;        
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 38px 0 0 0;
+}
+.promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 559px;
+    max-width: 559px;
+    margin: 38px 0 0 0;
+}
+.promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-text {
+    width: 580px;
+    max-width: 580px;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+    padding: 121px 0;
+    background: #FFFFFF;
+}
+
+.final-cta-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.final-cta-section__box {
+    background: #A9FF2C;
+    border-radius: 20px;
+    padding: 12px 30px 43px 30px;
+    width: 1273px;           
+    max-width: 1273px;        
+    margin-left: 0;         
+}
+
+.final-cta-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;          
+    font-weight: 400;           
+    line-height: 51px;       
+    color: #000000;             
+    margin: 0;
+    width: 1212px;           
+    max-width: 1212px;
+}
+/* Admin Section */
+
+.admin-section {
+    margin-top: -120px;     
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+.admin-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.admin-section__box {
+    background: #F1F1F1;
+    border-radius: 20px;
+    width: 1273px;
+    max-width: 1273px;
+    height: 720px;
+    margin: 0 0 0 -30x;      
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.admin-section__content {    
+    width: 500px;
+    align-self: center;
+}
+.admin-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;            
+    font-weight: 400;          
+    line-height: 58px;         
+    color: #000000;             
+    margin: 0 0 0 45px; 
+    width: 426px;              
+}
+.admin-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;            
+    font-weight: 400;           
+    line-height: 30px;          
+    color: rgba(0, 0, 0, 0.5);  
+    margin: 63px 0 0 45px;        
+    width: 474px;               
+}
+.admin-section__image-wrapper {
+    margin-left: auto;
+    margin-top: 78px;
+    flex-shrink: 0;
+}
+.admin-section__image {
+    width: 500px;               
+    height: 604px;            
+    object-fit: cover;
+    display: block;
+}
+
+/* Branding Section */
+.branding-section {
+    margin-top: -101px;       
+    padding: 80px 0;
+    background: #FFFFFF;
+}
+.branding-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.branding-section__header {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: flex-start;
+    gap: 140px;                   
+    margin-bottom: 80px;
+}
+.branding-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;        
+    color: #000000;
+    margin: 0;
+    width: 599px;             
+}
+.branding-section__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;           
+    font-weight: 400;
+    line-height: 30px;         
+    color: rgba(0, 0, 0, 0.5); 
+    margin: 26px 0 0 0; 
+    width: 506px;              
+}
+.branding-section__phones-wrapper {
+    background: #F1F1F1;
+    border-radius: 20px;
+    width: 1273px;
+    max-width: 1273px;
+    height: 700px;
+    margin: 0 auto 0 -1px;    
+    padding: 10px 0 0 10px;
+    position: relative;
+}
+.branding-section__phones {
+    display: flex;
+    justify-content: center;
+    gap: 47px;                
+    margin-top: -48px;
+}
+.branding-section__phone {
+    flex-shrink: 0;
+}
+.branding-section__phone--left {
+    margin-top: 112px;         
+}
+.branding-section__phone--center {
+    margin-top: 0;            
+}
+.branding-section__phone--right {
+    margin-top: 112px;         
+}
+.branding-section__phone-img {
+    width: 350px;              
+    height: 678px;             
+    object-fit: cover;
+    display: block;
+}
+.branding-section__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 179px;              
+    margin-top: 80px;
+}
+.branding-section__footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;          
+    font-weight: 400;
+    line-height: 58px;        
+    color: #000000;
+    margin: 0;
+    width: 561px;             
+}
+.branding-section__footer-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 13px 0 0 0;       
+    width: 501px;
+}
+
+/* Logos Section */
+.logos-section {
+    padding: 0 0;           
+    background: #FFFFFF;
+    margin-top: -30px;
+}
+.logos-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 0px;         
+}
+.logos-section__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 172px);
+    grid-template-rows: repeat(2, 102px);
+    gap: 56px 83px;
+    justify-content: center;
+    margin-top: 0;            
+    margin-left: -32px;
+}
+.logos-section__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos-section__logo-img {
+    width: 172px;
+    height: 102px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Payment Section */
+
+.payment-section {
+    padding: 129px 0 80px 0;  
+    background: #FFFFFF;
+}
+.payment-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.payment-section__box {
+    background: #A9FF2C;        
+    border-radius: 20px;        
+    width: 1273px;              
+    max-width: 1273px;
+    height: 260px;              
+    margin: 0 auto 0 -14px;
+    padding: 12px 30px 44px 30px;  
+}
+.payment-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;           
+    font-weight: 400;          
+    line-height: 51px;         
+    color: #000000;             
+    margin: 0;
+    width: 1077px;              
+    max-width: 1077px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin-top: 0;
+    padding: 0px 0 100px 0;
+    background: #FFFFFF;
+}
+.pricing-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.pricing-section__header {
+    margin-bottom: 80px;
+}
+.pricing-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    margin: 0 0 0 -15px;    
+    width: 522px;
+}
+.pricing-section__toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 92px;
+}
+.pricing-section__toggle {
+    display: flex;
+    gap: 19px;
+    align-items: flex-start;   
+}
+.pricing-section__toggle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+    margin-top: 0px;
+}
+.pricing-section__toggle-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.pricing-section__toggle-btn--active {
+    color: #000000;
+    letter-spacing: 0.4px;        
+    margin-bottom: 23px;          
+}
+
+.pricing-section__toggle-btn:last-child {
+    font-size: 23px;
+}
+.pricing-section__toggle-line {
+    width: 138px;
+    height: 1px;
+    background: #000000;
+    margin-top: 0;               
+    margin-left: -20px;
+}
+.pricing-section__one-time {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    text-align: right;
+    letter-spacing: 0.5px;
+    margin: -29px 0 0 auto;   
+    margin-right: 14px;       
+    width: 444px;
+}
+.pricing-section__cards {
+    display: flex;
+    gap: 30px;
+    margin-top: -34px; 
+}
+.pricing-section__card {
+    width: 440px;
+    height: 866px;
+    border-radius: 20px;
+    padding: 18px 30px 30px 30px;
+    position: relative;
+}
+.pricing-section__card--basic {
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    margin-left: -15px;
+}
+.pricing-section__card--pro {
+    background: #F1F1F1;
+    border: 1px solid #F1F1F1;
+}
+.pricing-section__card--pro .pricing-section__card-subtitle {
+    font-size: 19px;          
+    line-height: 30px;         
+    width: 360px;
+    margin: 28px 0 0 0; 
+}
+.pricing-section__card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #000000;
+     margin: 0px 0 20px 0;  
+}
+.pricing-section__card-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #707378;
+    margin: 27px 0 0 0;
+}
+.pricing-section__divider {
+    width: 393px;
+    height: 1px;
+    background: #E2E3E6;
+    margin: 46px 0;
+}
+.pricing-section__features-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    margin: -33px 0 60px 0;
+}
+.pricing-section__card--pro .pricing-section__features {
+    padding-left: 0px;
+    margin-top: -49px;        
+}
+.pricing-section__card--pro .pricing-section__features li:nth-child(2) {
+  font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--pro .pricing-section__features li:nth-child(9) {
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+.pricing-section__features li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #707378;
+    margin: 0 0 7px 0;
+    padding-left: 34px; 
+}
+.pricing-section__card--basic .pricing-section__features {
+     width: 330px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -1px; 
+}
+.pricing-section__card--basic .pricing-section__features li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;        
+    color: #707378;
+    margin: 0 0 7px 0;       
+    padding-left: 34px;
+    width: 330px;         
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(2) {
+    width: 302px;  
+    margin-top: -2px; 
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(3) {
+    margin-top: -1px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(4) {
+    margin-top: -3px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(5) {
+    margin-top: -3px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.pricing-section__card--basic .pricing-section__features li:nth-child(7) {
+    margin-top: -2px;
+    font-size: 21px;
+    line-height: 30px;
+}
+.pricing-section__price {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+        "current old"
+        "current period";
+    column-gap: 15px;
+    align-items: end;
+    justify-content: start;
+    height: 80px;               
+    margin-top: 217px;          
+}
+.pricing-section__card--pro .pricing-section__price {
+    margin-top: 60px;
+}
+.pricing-section__price-current {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 74px;
+    color: #000000;
+    grid-area: current;
+}
+.pricing-section__price-old {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FE6645;
+    grid-area: old;
+    align-self: end;
+    margin-bottom: 0px;
+}
+.pricing-section__price-period {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #707378;
+    grid-area: period;
+    align-self: start;
+    margin-top: -3px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    margin-top: -118px;       
+    padding: 100px 0;        
+    background: #FFFFFF;
+}
+.testimonials-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.testimonials-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.testimonials-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;           
+    font-weight: 400;
+    line-height: 58px;         
+    color: #000000;
+    margin: 0 0 0 -15px; 
+    width: 450px;             
+}
+.testimonials-section__nav {
+    display: flex;
+    gap: 43px;
+    margin-right: 14px;
+}
+.testimonials-section__arrow {
+    width: 70px;               
+    height: 60px;              
+    background: transparent;   
+    border: none;  
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.testimonials-section__arrow svg {
+    width: 48px;              
+    height: 60px;
+}
+.testimonials-section__arrow:hover {
+    background: #F1F1F1;
+}
+.testimonials-section__content {
+    display: flex;
+    gap: 50px;
+}
+.testimonials-section__image {
+    width: 407px;              
+    height: 474px;             
+    border-radius: 20px;       
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-top: -3px;        
+    margin-left: -14px;   
+}
+.testimonials-section__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.testimonials-section__text-block {
+    flex: 1;
+    margin-top: -23px;         
+}
+.testimonials-section__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;          
+    font-weight: 400;
+    line-height: 51px;       
+    color: #000000;
+    margin: 0 0 50px 0;
+    width: 800px;             
+    max-width: 800px;
+}
+.testimonials-section__author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;           
+    font-weight: 400;
+    line-height: 30px;        
+    color: #000000;
+    margin: -2px 0 1px 0;
+}
+.testimonials-section__position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;           
+    font-weight: 400;
+    line-height: 30px;       
+    color: #707378;          
+    margin: 0;
+}
+/* Guest Reviews Section */
+.guest-reviews-section {
+    padding: 50px 0 100px 0;
+    background: #FFFFFF;
+}
+.guest-reviews-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.guest-reviews-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;           
+    font-weight: 400;
+    line-height: 58px;     
+    color: #000000;
+    margin: -64px 0 80px 0; 
+    width: 443px;         
+}
+.guest-reviews-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.guest-reviews-section__card {
+    background: #F1F1F1;
+    border-radius: 20px;
+    padding: 30px;
+}
+/* 1. Emilly Barrett - выше и уже */
+.guest-reviews-section__card:nth-child(1) {
+    height: 290px;          
+    width: 404px;             
+    margin-top: -10px;         
+    padding: 20px;
+}
+
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__avatar {
+    margin-top: 10px;       
+    margin-left: 10px;       
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__author-info {
+    margin-top: 5px;       
+    margin-left: 3px;    
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__platform {
+    margin-top: 8px;      
+    margin-left: -3px; 
+}
+.guest-reviews-section__card:nth-child(1) .guest-reviews-section__review-text {
+    margin-top: -5px;        
+    margin-left: 10px;        
+    width: 345px;             
+     
+}
+/* 2. Margaret Sims - выше и левее */
+.guest-reviews-section__card:nth-child(2) {
+    width: 404px;
+    height: 350px;
+    padding: 20px;
+    margin-top: -10px;     
+    margin-left: -10px;  
+}
+
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__avatar {
+    margin-top: 9px;    
+    margin-left: 9px;        
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__author-info {
+    margin-top: 5px;  
+    margin-left: 3px;      
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__platform {
+    margin-top: 8px;     
+}
+.guest-reviews-section__card:nth-child(2) .guest-reviews-section__review-text {
+    margin-top: -5px;         
+    margin-left: 10px;        
+    width: 330px;        
+}
+/* 3. Thomas Fletcher - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(3) {
+    width: 404px;          
+    height: 230px;           
+    padding: 30px;
+    margin-top: -10px;        
+    margin-left: -20px;    
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__avatar {
+    margin-top: -1px;
+    margin-left: 2px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 0px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__platform {
+    margin-top: 8px;
+}
+.guest-reviews-section__card:nth-child(3) .guest-reviews-section__review-text {
+    font-size: 18px;      
+    line-height: 30px;
+    margin-top: -5px;
+    margin-left: 1px;
+    width: 327px;       
+}
+/* 4. Christopher Doyle - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(4) {
+    width: 404px;           
+    height: 290px;        
+    padding: 30px;
+    margin-top: -60px;          
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-name {
+    font-size: 20px;          
+     margin-top: -6px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-info {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__platform {
+    margin-top: 8px;
+}
+.guest-reviews-section__card:nth-child(4) .guest-reviews-section__review-text {
+    margin-top: -5px;
+    width: 340px;             
+}
+/* 5. Clare Hamilton - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(5) {
+    width: 404px;           
+    height: 290px;      
+    padding: 30px;
+    margin-left: -10px;     
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 2px;
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__platform {
+    margin-top: 10px;
+}
+.guest-reviews-section__card:nth-child(5) .guest-reviews-section__review-text {
+    margin-top: -5px;
+    margin-left: 0px;
+    width: 315px;             
+}
+/* 6. Benedict French - точные размеры из Figma */
+.guest-reviews-section__card:nth-child(6) {
+    width: 404px;             
+    height: 380px;         
+    padding: 30px;
+    margin-top: -120px;         
+    margin-left: -20px;     
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__author-info {
+    margin-top: -5px;
+    margin-left: 3px;
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__platform {
+    margin-top: 7px;
+}
+.guest-reviews-section__card:nth-child(6) .guest-reviews-section__review-text {
+    margin-top: -2px;
+    margin-left: 0px;
+    width: 338px;           
+}
+.guest-reviews-section__author-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.guest-reviews-section__author-name {
+    font-size: 19px;
+    color: #000000;
+    margin: 0;
+}
+.guest-reviews-section__review-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;          
+    font-weight: 400;
+    line-height: 30px;         
+    letter-spacing: 0.35px;   
+    color: #000000;
+    margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: -31px;  
+    padding: 0px 0 100px 0;
+    background: #FFFFFF;
+}
+.faq-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    gap: 100px;
+}
+.faq-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;        
+    font-weight: 400;
+    line-height: 58px;        
+    color: #000000;
+    margin: 12px 0 0 -15px;
+    width: 283px;             
+    flex-shrink: 0;
+}
+.faq-section__list {
+    flex: 1;
+    max-width: 840px;         
+     margin-left: 50px;
+}
+.faq-section__item {
+    margin-bottom: 0;
+}
+/* Question */
+.faq-section__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    min-height: 75px;          
+}
+.faq-section__question-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;          
+    font-weight: 400;
+    line-height: 30px;        
+    letter-spacing: 0.5px;     
+    color: #000000;
+    flex: 1;
+    padding-right: 30px;
+}
+.faq-section__arrow {
+    width: 22px;               
+    height: 12px;              
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.faq-section__item:hover .faq-section__arrow {
+    transform: translateY(2px);
+}
+
+/* CTA Section */
+.cta-section {
+    margin-top: 14px;  
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+.cta-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.cta-section__box {
+    background: #A9FF2C;       
+    border-radius: 32px;       
+    padding: 80px 30px;
+    text-align: center;        
+    position: relative;
+    width: 1273px;            
+    height: 712px;
+    margin: -105px auto 0 -15px;
+}
+.cta-section__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 74px;
+    color: #000000;
+   margin: 80px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* ← Центрирует строки */
+    max-width: 600px;
+}
+.cta-section__title-line {
+    display: block;
+    text-align: center;
+}
+.cta-section__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: -42px auto 50px auto;  
+    max-width: 698px;
+    text-align: center;
+}
+.cta-section__button {
+    display: inline-block;
+    background: #000000;
+    border-radius: 30px;
+    padding: 18px 68px;
+    text-decoration: none;
+    min-width: 380px;
+    min-height: 66px;
+    transition: background 0.3s ease;
+    margin: -8px auto 0 auto;  
+}
+.cta-section__button:hover {
+    background: #333333;
+}
+.cta-section__button-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    margin: -7px 0 0 -26px;     
+}
+
+/* Footer Section */
+.footer-section {
+    margin-top: -45px;         
+    padding: 0px 0 50px 0;    
+    background: #FFFFFF;
+}
+.footer-section__container {
+    max-width: 1333px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+.footer-section__copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;         
+    font-weight: 400;
+    line-height: 24px;        
+    color: rgba(0, 0, 0, 0.5); 
+    margin: 0 auto 0 -30px;
+    text-align: center;
+}
+
+/* Lab4*/
+img,
+svg {
+    max-width: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a,
+button,
+span {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1332px) {
+    .header,
+    .hero,
+    .features,
+    .qr-section,
+    .demo-section,
+    .summary-section,
+    .promo-section,
+    .final-cta-section,
+    .admin-section,
+    .branding-section,
+    .logos-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .faq-section,
+    .cta-section,
+    .footer-section {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .container,
+    .header__container,
+    .hero__container,
+    .features__container,
+    .qr-section__container,
+    .demo-section__container,
+    .summary-section__container,
+    .promo-section__container,
+    .final-cta-section__container,
+    .admin-section__container,
+    .branding-section__container,
+    .logos-section__container,
+    .payment-section__container,
+    .pricing-section__container,
+    .testimonials-section__container,
+    .guest-reviews-section__container,
+    .faq-section__container,
+    .cta-section__container,
+    .footer-section__container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content,
+    .admin-section__box,
+    .branding-section__phones-wrapper,
+    .final-cta-section__box,
+    .payment-section__box,
+    .cta-section__box {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content {
+        height: clamp(500px, 56vw, 720px);
+    }
+
+    .hero__title {
+        width: min(628px, 68%);
+        font-size: clamp(44px, 6vw, 72px);
+        line-height: 1.05;
+    }
+
+    .hero__demo {
+        margin-left: clamp(24px, 10vw, 135px);
+    }
+
+    .features__container,
+    .demo-section__cards,
+    .promo-section__cards,
+    .pricing-section__cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .features__card,
+    .demo-section__card-wrapper,
+    .demo-section__card,
+    .demo-section__phone,
+    .promo-section__card,
+    .promo-section__card-img,
+    .pricing-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        margin-left: 0;
+        flex-shrink: 1;
+    }
+
+    .demo-section__phone-img {
+        width: auto;
+        max-width: 70%;
+    }
+
+    .qr-section__box,
+    .final-cta-section__box,
+    .payment-section__box {
+        margin-left: 0;
+        min-height: auto;
+    }
+
+    .qr-section__text,
+    .final-cta-section__text,
+    .payment-section__text,
+    .summary-section__text,
+    .testimonials-section__text {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .demo-section__row--second .demo-section__card-text--left,
+    .demo-section__row--second .demo-section__card-text--right,
+    .demo-section__row--third .demo-section__card-text--tv,
+    .demo-section__row--third .demo-section__card-text--grms,
+    .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__card:last-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-text {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .payment-section__box {
+        height: auto;
+        min-height: 0;
+    }
+
+    .demo-section__header,
+    .promo-section__header,
+    .branding-section__header,
+    .branding-section__footer,
+    .testimonials-section__content,
+    .faq-section__container {
+        gap: 40px;
+    }
+
+    .summary-section {
+        padding: 120px 0;
+    }
+
+    .summary-section__text,
+    .promo-section__title,
+    .promo-section__description,
+    .pricing-section__title,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title,
+    .footer-section__copyright {
+        margin-left: 0;
+    }
+
+    .promo-section__description {
+        transform: none;
+    }
+
+    .admin-section__box {
+        height: auto;
+        min-height: 560px;
+        gap: 24px;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .admin-section__content,
+    .admin-section__title,
+    .admin-section__text {
+        width: 100%;
+        max-width: 520px;
+        margin-left: 0;
+    }
+
+    .admin-section__image {
+        width: min(44vw, 500px);
+        height: auto;
+    }
+
+    .branding-section__phones {
+        gap: clamp(16px, 4vw, 47px);
+    }
+
+    .branding-section__phone-img {
+        width: clamp(200px, 27vw, 350px);
+        height: auto;
+    }
+
+    .logos-section__grid {
+        grid-template-columns: repeat(5, minmax(100px, 1fr));
+        gap: 32px;
+        margin-left: 0;
+    }
+
+    .pricing-section__card {
+        height: auto;
+        min-height: 760px;
+        box-sizing: border-box;
+    }
+
+    .pricing-section__divider,
+    .pricing-section__card--basic .pricing-section__features,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--pro .pricing-section__card-subtitle {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pricing-section__price,
+    .pricing-section__card--pro .pricing-section__price {
+        margin-top: 48px;
+    }
+
+    .testimonials-section__text {
+        font-size: clamp(34px, 4vw, 46px);
+        line-height: 1.12;
+    }
+
+    .guest-reviews-section__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guest-reviews-section__card,
+    .guest-reviews-section__card:nth-child(n),
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__review-text {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .cta-section__box {
+        height: auto;
+        min-height: 560px;
+    }
+}
+@media (max-width: 900px) {
+    .guest-reviews-section__card:nth-child(4),
+    .guest-reviews-section__card:nth-child(5),
+    .guest-reviews-section__card:nth-child(6) {
+        display: none !important;
+    }
+    .header {
+        height: auto;
+    }
+
+    .header__container {
+        min-height: 72px;
+        gap: 20px;
+    }
+
+    .logo,
+    .btn--header {
+        margin-top: 0;
+    }
+
+    .btn--header {
+        margin-right: 0;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content {
+        height: 560px;
+    }
+
+    .hero__title {
+        width: min(560px, 90%);
+        padding-top: 24px;
+    }
+
+    .features,
+    .demo-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .cta-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .features__container,
+    .demo-section__cards,
+    .promo-section__cards,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .features__card {
+        min-height: auto;
+    }
+
+    .demo-section__header,
+    .promo-section__header,
+    .branding-section__header,
+    .branding-section__footer,
+    .pricing-section__toggle-wrapper,
+    .testimonials-section__content,
+    .faq-section__container {
+        flex-direction: column;
+    }
+
+    .demo-section__title,
+    .demo-section__description,
+    .promo-section__title,
+    .promo-section__description,
+    .branding-section__title,
+    .branding-section__description,
+    .branding-section__footer-title,
+    .branding-section__footer-description,
+    .pricing-section__title,
+    .pricing-section__one-time,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title,
+    .faq-section__list {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .demo-section__header,
+    .promo-section__header,
+    .branding-section__header,
+    .branding-section__footer,
+    .pricing-section__header,
+    .testimonials-section__header {
+        margin-bottom: 48px;
+    }
+
+    .promo-section__cards--row2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
+    .promo-section__card,
+    .promo-section__cards--row2 .promo-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+
+    .promo-section__card-img,
+    .promo-section__cards--row2 .promo-section__card-img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-img {
+        object-position: 60% center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-img {
+        object-position: 72% center;
+    }
+
+    .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 18px 0 10px 0;
+    }
+
+    .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .admin-section {
+        margin-top: 0;
+        padding: 72px 0;
+    }
+
+    .admin-section__box {
+        flex-direction: column;
+    }
+
+    .admin-section__image-wrapper {
+        margin: 24px auto 0;
+    }
+
+    .admin-section__image {
+        width: min(100%, 500px);
+    }
+
+    .branding-section {
+        margin-top: 0;
+        padding: 72px 0;
+    }
+
+    .branding-section__phones-wrapper {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .branding-section__phones {
+        align-items: flex-end;
+        margin-top: 0;
+    }
+
+    .branding-section__phone--left,
+    .branding-section__phone--right {
+        margin-top: 64px;
+    }
+
+    .logos-section__grid {
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+    }
+
+    .pricing-section__toggle-wrapper {
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .pricing-section__one-time {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .pricing-section__cards {
+        margin-top: 0;
+        align-items: stretch;
+    }
+
+    .pricing-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .pricing-section__card--basic,
+    .pricing-section__card--pro {
+        margin-left: 0;
+    }
+
+    .pricing-section__card--pro {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+    }
+
+    .pricing-section__card-title {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 16px 0;
+    }
+
+    .pricing-section__card-subtitle,
+    .pricing-section__card--pro .pricing-section__card-subtitle {
+        font-size: 18px;
+        line-height: 1.4;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pricing-section__divider {
+        width: 100%;
+        max-width: 100%;
+        margin: 22px 0;
+    }
+
+    .pricing-section__features-title {
+        margin: 0 0 18px 0;
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .pricing-section__features,
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--pro .pricing-section__features,
+    .pricing-section__card--pro .pricing-section__features li {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .pricing-section__card--pro .pricing-section__features {
+        margin-top: 18px;
+    }
+
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--pro .pricing-section__features li {
+        margin: 0 0 8px 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .pricing-section__price,
+    .pricing-section__card--pro .pricing-section__price {
+        height: auto;
+        margin-top: 22px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .testimonials-section {
+        margin-top: 0;
+    }
+
+    .testimonials-section__image {
+        width: min(100%, 407px);
+        height: auto;
+        margin-left: 0;
+    }
+
+    .faq-section {
+        margin-top: 0;
+        padding-bottom: 72px;
+    }
+}
+
+@media (max-width: 600px) {
+    .guest-reviews-section__card:nth-child(4),
+    .guest-reviews-section__card:nth-child(5),
+    .guest-reviews-section__card:nth-child(6) {
+        display: none !important;
+    }
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .header,
+    .hero,
+    .features,
+    .qr-section,
+    .demo-section,
+    .summary-section,
+    .promo-section,
+    .final-cta-section,
+    .admin-section,
+    .branding-section,
+    .logos-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .faq-section,
+    .cta-section,
+    .footer-section {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: clip;
+    }
+
+    .container,
+    .header__container,
+    .hero__container,
+    .features__container,
+    .qr-section__container,
+    .demo-section__container,
+    .summary-section__container,
+    .promo-section__container,
+    .final-cta-section__container,
+    .admin-section__container,
+    .branding-section__container,
+    .logos-section__container,
+    .payment-section__container,
+    .pricing-section__container,
+    .testimonials-section__container,
+    .guest-reviews-section__container,
+    .faq-section__container,
+    .cta-section__container,
+    .footer-section__container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .logo {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn--header,
+    .cta-section__button {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        margin-top: 16px;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content {
+        width: 100%;
+        max-width: 100%;
+        height: 520px;
+        box-sizing: border-box;
+    }
+
+    .hero__image {
+        object-position: center;
+    }
+
+    .hero__content {
+        padding: 20px;
+    }
+
+    .hero__title,
+    .hero__demo,
+    .hero__demo-title,
+    .hero__demo-text {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero__title,
+    .cta-section__title {
+        font-size: 38px;
+        line-height: 1.08;
+    }
+
+    .hero__demo {
+        margin-left: 0;
+        margin-bottom: 28px;
+    }
+
+    .hero__demo-title {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .hero__demo-text,
+    .features__text,
+    .demo-section__card-text,
+    .demo-section__row:first-of-type .demo-section__card-text,
+    .demo-section__row--second .demo-section__card-text,
+    .demo-section__row--third .demo-section__card-text,
+    .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text,
+    .admin-section__text,
+    .pricing-section__features li,
+    .testimonials-section__position,
+    .guest-reviews-section__review-text,
+    .faq-section__question-text,
+    .cta-section__subtitle {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .features,
+    .demo-section,
+    .summary-section,
+    .final-cta-section,
+    .admin-section,
+    .branding-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .cta-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .features__card,
+    .admin-section__box,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        padding: 24px;
+    }
+
+    .features__container,
+    .demo-section__cards,
+    .promo-section__cards,
+    .promo-section__cards--row2,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        align-items: start;
+    }
+
+    .features__card,
+    .demo-section__card,
+    .promo-section__card,
+    .promo-section__cards--row2 .promo-section__card,
+    .pricing-section__card,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .features__title,
+    .qr-section__text,
+    .demo-section__title,
+    .summary-section__text,
+    .promo-section__title,
+    .final-cta-section__text,
+    .admin-section__title,
+    .branding-section__title,
+    .branding-section__footer-title,
+    .payment-section__text,
+    .pricing-section__title,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title {
+        font-size: 34px;
+        line-height: 1.12;
+    }
+
+    .payment-section__text {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .demo-section__description,
+    .promo-section__description,
+    .branding-section__description,
+    .branding-section__footer-description,
+    .pricing-section__one-time {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+    }
+
+    .demo-section__card,
+    .demo-section__phone {
+        height: 380px;
+    }
+
+    .demo-section__phone-img {
+        height: 380px;
+        max-width: 82%;
+    }
+
+    .demo-section__row--second,
+    .demo-section__row--third,
+    .promo-section__cards--row2 {
+        margin-top: 48px;
+    }
+
+    .promo-section {
+        margin-top: 0;
+    }
+
+    .promo-section__card-img {
+        height: 300px;
+        aspect-ratio: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-img {
+        object-position: 62% center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-img {
+        object-position: 72% center;
+    }
+
+    .promo-section__card-title,
+    .promo-section__card:last-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 22px 0 12px 0;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .promo-section__card-text,
+    .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__card:last-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+        line-height: 1.45;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .qr-section__box,
+    .final-cta-section__box,
+    .payment-section__box,
+    .cta-section__box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .demo-section__cards,
+    .promo-section__cards,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .demo-section__card-wrapper,
+    .demo-section__card,
+    .demo-section__phone,
+    .promo-section__card,
+    .promo-section__card-img,
+    .pricing-section__card,
+    .testimonials-section__image,
+    .testimonials-section__text-block,
+    .faq-section__list {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .promo-section__cards,
+    .promo-section__cards--row2 {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 38px;
+    }
+
+    .promo-section__card,
+    .promo-section__card-img,
+    .promo-section__card-title,
+    .promo-section__card-text {
+        max-width: calc(100vw - 32px);
+        overflow: visible;
+    }
+
+    .admin-section__text {
+        margin-top: 28px;
+    }
+
+    .branding-section__phones {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .branding-section__phone--left,
+    .branding-section__phone--right,
+    .branding-section__phone--center {
+        margin-top: 0;
+    }
+
+    .branding-section__phone-img {
+        width: min(240px, 82vw);
+    }
+
+    .logos-section__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .pricing-section__card {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .pricing-section__card--pro {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+    }
+
+    .pricing-section__card-title {
+        font-size: 34px;
+        line-height: 1.15;
+        margin: 0 0 18px 0;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__card-subtitle,
+    .pricing-section__card--pro .pricing-section__card-subtitle {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__divider {
+        width: 100%;
+        max-width: 100%;
+        margin: 24px 0;
+    }
+
+    .pricing-section__features-title {
+        margin: 0 0 14px 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__card--pro .pricing-section__features {
+        margin-top: 0;
+    }
+
+    .pricing-section__features,
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li:nth-child(n),
+    .pricing-section__card--pro .pricing-section__features li:nth-child(n) {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li:nth-child(n),
+    .pricing-section__card--pro .pricing-section__features li:nth-child(n) {
+        margin: 0 0 8px 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 1.32;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__features li:last-child {
+        margin-bottom: 0;
+    }
+
+    .pricing-section__price,
+    .pricing-section__card--pro .pricing-section__price {
+        height: auto;
+        margin-top: 22px;
+        column-gap: 10px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .pricing-section__price-old,
+    .pricing-section__price-period {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .testimonials-section__header {
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .testimonials-section__nav {
+        margin-right: 0;
+    }
+
+    .testimonials-section__text {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+   .guest-reviews-section__author-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+   .guest-reviews-section__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+.guest-reviews-section__card:nth-child(n) {
+        display: block !important;
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__author-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__avatar {
+        width: 64px;
+        height: 64px;
+        margin-left: 0;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__author-info {
+        width: auto;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-top: 0;
+        flex: 1 1 auto;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__platform {
+        width: auto;
+        max-width: 140px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__review-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 16px 0 0 0;
+        font-size: 17px;
+        line-height: 1.45;
+        overflow-wrap: normal;
+        word-break: normal;
+        hyphens: none;
+    }
+
+    .guest-reviews-section__author-name,
+    .guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-name {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .faq-section__question {
+        align-items: flex-start;
+    }
+
+    .cta-section__box {
+        min-height: 0;
+        margin-top: 0;
+    }
+
+    .final-cta-section__box {
+        padding: 26px 20px;
+    }
+
+    .final-cta-section__text {
+        font-size: 25px;
+        line-height: 1.22;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .cta-section__title {
+        margin-top: 16px;
+    }
+
+    .cta-section__subtitle {
+        margin-top: 0;
+    }
+
+    .cta-section__button {
+        padding: 16px 20px;
+    }
+
+    .cta-section__button-text {
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .container,
+    .header__container,
+    .hero__container,
+    .features__container,
+    .qr-section__container,
+    .demo-section__container,
+    .summary-section__container,
+    .promo-section__container,
+    .final-cta-section__container,
+    .admin-section__container,
+    .branding-section__container,
+    .logos-section__container,
+    .payment-section__container,
+    .pricing-section__container,
+    .testimonials-section__container,
+    .guest-reviews-section__container,
+    .faq-section__container,
+    .cta-section__container,
+    .footer-section__container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero__title,
+    .cta-section__title {
+        font-size: 32px;
+    }
+
+    .features__title,
+    .qr-section__text,
+    .demo-section__title,
+    .summary-section__text,
+    .promo-section__title,
+    .final-cta-section__text,
+    .admin-section__title,
+    .branding-section__title,
+    .branding-section__footer-title,
+    .payment-section__text,
+    .pricing-section__title,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title {
+        font-size: 30px;
+    }
+
+    .features__card,
+    .admin-section__box,
+    .pricing-section__card,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .payment-section__box {
+        height: auto;
+        min-height: 0;
+        padding: 24px 18px;
+    }
+
+    .payment-section__text {
+        font-size: 24px;
+        line-height: 1.22;
+    }
+
+    .promo-section__card-img {
+        height: 240px;
+    }
+
+    .promo-section__card-title,
+    .promo-section__card:last-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+        font-size: 28px;
+        line-height: 1.16;
+    }
+
+    .pricing-section__card {
+        padding: 18px;
+    }
+
+    .pricing-section__card-title {
+        font-size: 32px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 44px;
+    }
+
+    .promo-section__card,
+    .promo-section__card-img,
+    .promo-section__card-title,
+    .promo-section__card-text {
+        max-width: calc(100vw - 24px);
+    }
+
+    .final-cta-section__text {
+        font-size: 22px;
+        line-height: 1.24;
+    }
+
+    .guest-reviews-section__grid {
+        gap: 20px;
+    }
+
+    .guest-reviews-section__card:nth-child(n) {
+        padding: 20px;
+    }
+
+    .guest-reviews-section__author-block {
+        gap: 12px;
+    }
+
+    .guest-reviews-section__author-info {
+        width: auto;
+        max-width: 100%;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .guest-reviews-section__platform {
+        width: auto;
+        max-width: 140px;
+    }
+
+    .guest-reviews-section__avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    .guest-reviews-section__platform {
+        max-width: 130px;
+    }
+
+    .logo,
+    .btn--header,
+    .cta-section__button,
+    .hero__title,
+    .hero__demo,
+    .qr-section__text,
+    .final-cta-section__text,
+    .payment-section__text,
+    .summary-section__text,
+    .testimonials-section__text {
+        max-width: 100%;
+    }
+}
