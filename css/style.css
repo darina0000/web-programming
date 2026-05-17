@@ -1759,3 +1759,316 @@ span {
         min-height: 560px;
     }
 }
+@media (max-width: 900px) {
+    .guest-reviews-section__card:nth-child(4),
+    .guest-reviews-section__card:nth-child(5),
+    .guest-reviews-section__card:nth-child(6) {
+        display: none !important;
+    }
+    .header {
+        height: auto;
+    }
+
+    .header__container {
+        min-height: 72px;
+        gap: 20px;
+    }
+
+    .logo,
+    .btn--header {
+        margin-top: 0;
+    }
+
+    .btn--header {
+        margin-right: 0;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content {
+        height: 560px;
+    }
+
+    .hero__title {
+        width: min(560px, 90%);
+        padding-top: 24px;
+    }
+
+    .features,
+    .demo-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .cta-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .features__container,
+    .demo-section__cards,
+    .promo-section__cards,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .features__card {
+        min-height: auto;
+    }
+
+    .demo-section__header,
+    .promo-section__header,
+    .branding-section__header,
+    .branding-section__footer,
+    .pricing-section__toggle-wrapper,
+    .testimonials-section__content,
+    .faq-section__container {
+        flex-direction: column;
+    }
+
+    .demo-section__title,
+    .demo-section__description,
+    .promo-section__title,
+    .promo-section__description,
+    .branding-section__title,
+    .branding-section__description,
+    .branding-section__footer-title,
+    .branding-section__footer-description,
+    .pricing-section__title,
+    .pricing-section__one-time,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title,
+    .faq-section__list {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .demo-section__header,
+    .promo-section__header,
+    .branding-section__header,
+    .branding-section__footer,
+    .pricing-section__header,
+    .testimonials-section__header {
+        margin-bottom: 48px;
+    }
+
+    .promo-section__cards--row2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
+    .promo-section__card,
+    .promo-section__cards--row2 .promo-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+
+    .promo-section__card-img,
+    .promo-section__cards--row2 .promo-section__card-img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-img {
+        object-position: 60% center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-img {
+        object-position: 72% center;
+    }
+
+    .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 18px 0 10px 0;
+    }
+
+    .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .admin-section {
+        margin-top: 0;
+        padding: 72px 0;
+    }
+
+    .admin-section__box {
+        flex-direction: column;
+    }
+
+    .admin-section__image-wrapper {
+        margin: 24px auto 0;
+    }
+
+    .admin-section__image {
+        width: min(100%, 500px);
+    }
+
+    .branding-section {
+        margin-top: 0;
+        padding: 72px 0;
+    }
+
+    .branding-section__phones-wrapper {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .branding-section__phones {
+        align-items: flex-end;
+        margin-top: 0;
+    }
+
+    .branding-section__phone--left,
+    .branding-section__phone--right {
+        margin-top: 64px;
+    }
+
+    .logos-section__grid {
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+    }
+
+    .pricing-section__toggle-wrapper {
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .pricing-section__one-time {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .pricing-section__cards {
+        margin-top: 0;
+        align-items: stretch;
+    }
+
+    .pricing-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .pricing-section__card--basic,
+    .pricing-section__card--pro {
+        margin-left: 0;
+    }
+
+    .pricing-section__card--pro {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+    }
+
+    .pricing-section__card-title {
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 16px 0;
+    }
+
+    .pricing-section__card-subtitle,
+    .pricing-section__card--pro .pricing-section__card-subtitle {
+        font-size: 18px;
+        line-height: 1.4;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pricing-section__divider {
+        width: 100%;
+        max-width: 100%;
+        margin: 22px 0;
+    }
+
+    .pricing-section__features-title {
+        margin: 0 0 18px 0;
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .pricing-section__features,
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--pro .pricing-section__features,
+    .pricing-section__card--pro .pricing-section__features li {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .pricing-section__card--pro .pricing-section__features {
+        margin-top: 18px;
+    }
+
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--pro .pricing-section__features li {
+        margin: 0 0 8px 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    .pricing-section__price,
+    .pricing-section__card--pro .pricing-section__price {
+        height: auto;
+        margin-top: 22px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .testimonials-section {
+        margin-top: 0;
+    }
+
+    .testimonials-section__image {
+        width: min(100%, 407px);
+        height: auto;
+        margin-left: 0;
+    }
+
+    .faq-section {
+        margin-top: 0;
+        padding-bottom: 72px;
+    }
+}
