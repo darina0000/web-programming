@@ -2072,3 +2072,617 @@ span {
         padding-bottom: 72px;
     }
 }
+
+@media (max-width: 600px) {
+    .guest-reviews-section__card:nth-child(4),
+    .guest-reviews-section__card:nth-child(5),
+    .guest-reviews-section__card:nth-child(6) {
+        display: none !important;
+    }
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .header,
+    .hero,
+    .features,
+    .qr-section,
+    .demo-section,
+    .summary-section,
+    .promo-section,
+    .final-cta-section,
+    .admin-section,
+    .branding-section,
+    .logos-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .faq-section,
+    .cta-section,
+    .footer-section {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: clip;
+    }
+
+    .container,
+    .header__container,
+    .hero__container,
+    .features__container,
+    .qr-section__container,
+    .demo-section__container,
+    .summary-section__container,
+    .promo-section__container,
+    .final-cta-section__container,
+    .admin-section__container,
+    .branding-section__container,
+    .logos-section__container,
+    .payment-section__container,
+    .pricing-section__container,
+    .testimonials-section__container,
+    .guest-reviews-section__container,
+    .faq-section__container,
+    .cta-section__container,
+    .footer-section__container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .logo {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn--header,
+    .cta-section__button {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .hero {
+        margin-top: 16px;
+    }
+
+    .hero__image-wrapper,
+    .hero__image,
+    .hero__content {
+        width: 100%;
+        max-width: 100%;
+        height: 520px;
+        box-sizing: border-box;
+    }
+
+    .hero__image {
+        object-position: center;
+    }
+
+    .hero__content {
+        padding: 20px;
+    }
+
+    .hero__title,
+    .hero__demo,
+    .hero__demo-title,
+    .hero__demo-text {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero__title,
+    .cta-section__title {
+        font-size: 38px;
+        line-height: 1.08;
+    }
+
+    .hero__demo {
+        margin-left: 0;
+        margin-bottom: 28px;
+    }
+
+    .hero__demo-title {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .hero__demo-text,
+    .features__text,
+    .demo-section__card-text,
+    .demo-section__row:first-of-type .demo-section__card-text,
+    .demo-section__row--second .demo-section__card-text,
+    .demo-section__row--third .demo-section__card-text,
+    .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text,
+    .admin-section__text,
+    .pricing-section__features li,
+    .testimonials-section__position,
+    .guest-reviews-section__review-text,
+    .faq-section__question-text,
+    .cta-section__subtitle {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    .features,
+    .demo-section,
+    .summary-section,
+    .final-cta-section,
+    .admin-section,
+    .branding-section,
+    .payment-section,
+    .pricing-section,
+    .testimonials-section,
+    .guest-reviews-section,
+    .cta-section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .features__card,
+    .admin-section__box,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        padding: 24px;
+    }
+
+    .features__container,
+    .demo-section__cards,
+    .promo-section__cards,
+    .promo-section__cards--row2,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        align-items: start;
+    }
+
+    .features__card,
+    .demo-section__card,
+    .promo-section__card,
+    .promo-section__cards--row2 .promo-section__card,
+    .pricing-section__card,
+    .guest-reviews-section__card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .features__title,
+    .qr-section__text,
+    .demo-section__title,
+    .summary-section__text,
+    .promo-section__title,
+    .final-cta-section__text,
+    .admin-section__title,
+    .branding-section__title,
+    .branding-section__footer-title,
+    .payment-section__text,
+    .pricing-section__title,
+    .testimonials-section__title,
+    .guest-reviews-section__title,
+    .faq-section__title {
+        font-size: 34px;
+        line-height: 1.12;
+    }
+
+    .payment-section__text {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .demo-section__description,
+    .promo-section__description,
+    .branding-section__description,
+    .branding-section__footer-description,
+    .pricing-section__one-time {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+    }
+
+    .demo-section__card,
+    .demo-section__phone {
+        height: 380px;
+    }
+
+    .demo-section__phone-img {
+        height: 380px;
+        max-width: 82%;
+    }
+
+    .demo-section__row--second,
+    .demo-section__row--third,
+    .promo-section__cards--row2 {
+        margin-top: 48px;
+    }
+
+    .promo-section {
+        margin-top: 0;
+    }
+
+    .promo-section__card-img {
+        height: 300px;
+        aspect-ratio: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-img {
+        object-position: 62% center;
+    }
+
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-img {
+        object-position: 72% center;
+    }
+
+    .promo-section__card-title,
+    .promo-section__card:last-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-title,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 22px 0 12px 0;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .promo-section__card-text,
+    .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__card:last-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:first-child .promo-section__card-text,
+    .promo-section__cards--row2 .promo-section__card:last-child .promo-section__card-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+        line-height: 1.45;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .qr-section__box,
+    .final-cta-section__box,
+    .payment-section__box,
+    .cta-section__box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .demo-section__cards,
+    .promo-section__cards,
+    .pricing-section__cards,
+    .guest-reviews-section__grid {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .demo-section__card-wrapper,
+    .demo-section__card,
+    .demo-section__phone,
+    .promo-section__card,
+    .promo-section__card-img,
+    .pricing-section__card,
+    .testimonials-section__image,
+    .testimonials-section__text-block,
+    .faq-section__list {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .promo-section__cards,
+    .promo-section__cards--row2 {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 38px;
+    }
+
+    .promo-section__card,
+    .promo-section__card-img,
+    .promo-section__card-title,
+    .promo-section__card-text {
+        max-width: calc(100vw - 32px);
+        overflow: visible;
+    }
+
+    .admin-section__text {
+        margin-top: 28px;
+    }
+
+    .branding-section__phones {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .branding-section__phone--left,
+    .branding-section__phone--right,
+    .branding-section__phone--center {
+        margin-top: 0;
+    }
+
+    .branding-section__phone-img {
+        width: min(240px, 82vw);
+    }
+
+    .logos-section__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .pricing-section__card {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .pricing-section__card--pro {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+    }
+
+    .pricing-section__card-title {
+        font-size: 34px;
+        line-height: 1.15;
+        margin: 0 0 18px 0;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__card-subtitle,
+    .pricing-section__card--pro .pricing-section__card-subtitle {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__divider {
+        width: 100%;
+        max-width: 100%;
+        margin: 24px 0;
+    }
+
+    .pricing-section__features-title {
+        margin: 0 0 14px 0;
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__card--pro .pricing-section__features {
+        margin-top: 0;
+    }
+
+    .pricing-section__features,
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li:nth-child(n),
+    .pricing-section__card--pro .pricing-section__features li:nth-child(n) {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li,
+    .pricing-section__card--basic .pricing-section__features li:nth-child(n),
+    .pricing-section__card--pro .pricing-section__features li:nth-child(n) {
+        margin: 0 0 8px 0;
+        padding-left: 0;
+        font-size: 17px;
+        line-height: 1.32;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .pricing-section__features li:last-child {
+        margin-bottom: 0;
+    }
+
+    .pricing-section__price,
+    .pricing-section__card--pro .pricing-section__price {
+        height: auto;
+        margin-top: 22px;
+        column-gap: 10px;
+    }
+
+    .pricing-section__price-current {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .pricing-section__price-old,
+    .pricing-section__price-period {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .testimonials-section__header {
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .testimonials-section__nav {
+        margin-right: 0;
+    }
+
+    .testimonials-section__text {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+   .guest-reviews-section__author-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+   .guest-reviews-section__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+.guest-reviews-section__card:nth-child(n) {
+        display: block !important;
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__author-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__avatar {
+        width: 64px;
+        height: 64px;
+        margin-left: 0;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__author-info {
+        width: auto;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-top: 0;
+        flex: 1 1 auto;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__platform {
+        width: auto;
+        max-width: 140px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .guest-reviews-section__card:nth-child(n) .guest-reviews-section__review-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 16px 0 0 0;
+        font-size: 17px;
+        line-height: 1.45;
+        overflow-wrap: normal;
+        word-break: normal;
+        hyphens: none;
+    }
+
+    .guest-reviews-section__author-name,
+    .guest-reviews-section__card:nth-child(4) .guest-reviews-section__author-name {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .faq-section__question {
+        align-items: flex-start;
+    }
+
+    .cta-section__box {
+        min-height: 0;
+        margin-top: 0;
+    }
+
+    .final-cta-section__box {
+        padding: 26px 20px;
+    }
+
+    .final-cta-section__text {
+        font-size: 25px;
+        line-height: 1.22;
+        overflow-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+    }
+
+    .cta-section__title {
+        margin-top: 16px;
+    }
+
+    .cta-section__subtitle {
+        margin-top: 0;
+    }
+
+    .cta-section__button {
+        padding: 16px 20px;
+    }
+
+    .cta-section__button-text {
+        margin: 0;
+        font-size: 20px;
+    }
+}
